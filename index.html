@@ -14,10 +14,10 @@
 <body>
     <!-- start-header -->
     <header>
-        <nav class="flex justify-around fixed w-full h-18 shadow-xl p-2 z-40 bg-opacity-80">
+        <nav class="flex justify-between fixed w-full h-18 shadow-xl p-2 z-40 bg-white bg-opacity-90">
         <div class="home-name flex justify-around gap-1 md:gap-2 w-fit ">
             <h1 class=" text-2xl font-bold text-[#4a90e2] hover:text-[#3978d7] md:text-4xl font-['Saira_Stencil_One']" >DeepMetrics</h1>
-           <span class=" p-1 md:font-thin font-bold lg:font-bold text-[7px] sm:text-[8px] md:text-[10px] 
+           <span class=" p-1 md:font-thin font-bold select-none lg:font-bold text-[7px] sm:text-[8px] md:text-[10px] 
            leading-wider h-fit bg-[#dfedfa] text-[#3978d7] rounded-2xl">Data Into Insights</span>
         </div>
         <ul class=" hidden md:flex justify-around lg:justify-between w-[480px]  lg:w-[500px]">
@@ -56,13 +56,13 @@
                     <span class="text-[#2C3E50] block sm:inline"><i class="fa-sharp fa-solid fa-gem  text-[#4a90e2] text-xl"></i> &nbsp;Professional Team</span>
                 </div>
                 <div class="btns flex flex-wrap gap-4 ">
-                    <span class="p-4 cursor-pointer border-2 border-transparent hover:border-[#4a90e2] text-xl text-white
+                    <span class="p-4 cursor-pointer border-2 border-transparent select-none hover:border-[#4a90e2] text-xl text-white
                      hover:text-[#4a90e2] font-bold bg-[#4a90e2] hover:bg-white transition-all duration-100">Request Analysis</span>
-                    <span class="p-4 cursor-pointer text-xl font-bold border-2 text-[#2C3E50] border-[#2C3E50] hover:border-[#4a90e2]
+                    <span class="p-4 cursor-pointer text-xl font-bold select-none border-2 text-[#2C3E50] border-[#2C3E50] hover:border-[#4a90e2]
                      hover:text-[#4a90e2] transition-all duration-100"><i class="fa-sharp fa-solid fa-circle-play text-2xl"></i>&nbsp; Watch Demo</span>
                 </div>
             </div>
-            <div class="image-container flex relative justify-start  m-auto sm:w-60 h-50 lg:w-[550px] lg:h-[450px]">
+            <div class="image-container flex relative justify-start w-60 m-auto h-50 lg:w-[550px] lg:h-[450px]">
                 <video src="vidoes/WhatsApp Video 2026-03-13 at 9.04.01 PM.mp4" muted autoplay loop playsinline class="img self-center hidden lg:block w-[550px] h-[400px]"></video>
                 <div class="client bottom-0 left-0 absolute flex gap-3 z-5 px-4 py-2 bg-white rounded-2xl shadow-2xl">
                     <i class="fa-regular fa-handshake text-3xl self-center p-1 text-[#1abc9c] rounded-full bg-[#cdfaec]"></i> 
@@ -80,8 +80,8 @@
     <div class="section_container min-h-full min-w-screen p-8 pt-24 text-center" >
         <div class="topic_name space-y-8 text-center">
             <h2 class="text-2xl sm:text-4xl font-bold text-[#62e6c5]">Our Data Analytics Services</h2>
-            <div class="line m-auto h-[6px] bg-[#62e6c5] w-40 hover:w-[50%] rounded-2xl transition-all duration-1000"></div>
             <p class="text-base sm:text-xl text-[#2C3E50]">We deliver powerful data solutions that help your business understand trends and make smarter decisions.</p>
+            <div class="line m-auto h-[6px] bg-[#62e6c5] w-40 hover:w-[80%] rounded-2xl transition-all duration-1000"></div>
         </div>
         <div class="elements-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-28 text-left gap-10">
             <div class="element group space-y-4 h-fit p-4 border-[1px] rounded-3xl
@@ -167,8 +167,8 @@
     <div class="container-three mt-24 min-w-full"> 
         <div class="topic_name space-y-8 text-center">
             <h2 class="text-2xl sm:text-4xl font-bold text-[#62e6c5]">Our Data Experts</h2>
-            <div class="line m-auto h-[6px] bg-[#62e6c5] w-40 hover:w-[50%] rounded-2xl transition-all duration-1000"></div>
             <p class="text-base sm:text-xl text-[#2C3E50]">A talented team of analysts and engineers turning complex data into smart business solutions.</p>
+            <div class="line m-auto h-[6px] bg-[#62e6c5] w-40 hover:w-[80%] rounded-2xl transition-all duration-1000"></div>
         </div>
         <div class="container-staff mt-28 min-w-screen mb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-evenly gap-5 p-8">
             <div class="staff group text-center shadow-lg hover:shadow-2xl  h-fit overflow-hidden rounded-3xl ">
@@ -261,9 +261,9 @@
         <div class="container-data flex flex-wrap lg:flex-nowrap justify-evenly gap-20 justify-between w-full h-full pb-10">
             <form class="flex flex-col gap-20 bg-[#172754] w-[620px] p-8 rounded-3xl m-auto shadow-2xl">
                 <p class="text-4xl text-white font-bold">Start Your Data Journey</p>
-                <input type="text"  class="h-16 rounded-xl p-4 bg-[#bfcffe] focus:outline-none focus:ring-2" placeholder="Full Name">
-                <input type="email" class="h-16 rounded-xl p-4 bg-[#bfcffe] focus:outline-none focus:ring-2"  placeholder="Email Address">
-                <textarea placeholder="Your Message......" class="rounded-xl p-2 h-28 bg-[#bfcffe] focus:outline-none focus:ring-2" minlength="20" maxlength="200" ></textarea>
+                <input type="text"  class="h-16 rounded-xl p-4 bg-[#bfcffe] outline-none focus:ring-2 focus:ring-white" placeholder="Full Name">
+                <input type="email" class="h-16 rounded-xl p-4 bg-[#bfcffe] outline-none focus:ring-2 focus:ring-white"  placeholder="Email Address">
+                <textarea placeholder="Your Message......" class="rounded-xl p-2 h-28 bg-[#bfcffe] outline-none focus:ring-2 focus:ring-white"maxlength="200" ></textarea>
                 <input type="submit" class="text-white px-8 py-3 cursor-pointer bg-[#1d4dd8] font-bold rounded-xl hover:shadow-xl hover:bg-[#1E3A8A]
                 transition-all duration-500" value="Send Message">
             </form>
@@ -299,13 +299,13 @@
 
         <div class="location flex relative m-auto h-40 lg:w-[600px] lg:h-[250px] gap-6 justify-center items-center
         bg-gradient-to-tl from-[#00ffff] via-[#62E6C5] to-[#4a90e2] rounded-3xl w-full">
-            <i class="fa-solid fa-sitemap text-7xl opacity-40"></i>
-            <span class="opacity-60 text-xl">Explore Pages</span>
+            <i class="fa-solid fa-sitemap text-4xl md:text-7xl opacity-40"></i>
+            <span class="opacity-60 text-lg md:text-xl select-none">Explore Pages</span>
         </div>
     </div>
     </div>
     <hr class="text-white">
-    <div class="copy md:flex flex-wrap text-center justify-between pt-10">
+    <div class="copy md:flex flex-wrap text-center justify-between pt-10 space-y-4">
         <p class="text-[#c0feff] text-sm">&copy 2026 DataHub Analytics. All rights reserved.</p>
         <div class="footer-icons space-x-6 w-full md:w-fit">
             <a class="inline-block group hover:scale-110 transition-all duration-200" href="#"><i class="fa-brands fa-facebook-f text-white text-xl  group-hover:text-[#c0feff]"></i></a>
