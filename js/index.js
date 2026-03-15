@@ -1,5 +1,14 @@
-largestNum = arr => {return Math.max(arr)}
+var counter = document.getElementById("counter")
 
-console.log(largestNum([3, 7, 2, 9]))
-console.log(largestNum([10, 5, 8]))
-console.log(largestNum([1, 2, 3]))
+var start = 0 ; 
+var end_counter = 700 ;
+var duration = 4000 ; 
+var steptime = duration/end_counter
+
+fun = setInterval(() =>{
+start++
+counter.textContent = start + "+"
+if(end_counter <= start){
+    clearInterval(fun)
+}
+}, steptime )
