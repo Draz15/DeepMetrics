@@ -15,34 +15,25 @@ interval_one = setInterval(() => {
     }
 }, each_count)
  
- fun = () =>{
-if( input_name.value != ""){
-    label_one.style.transform = 'translateY(-24px) scale(0.75)'
-    label_one.style.color = '#3b81f6'
-    input_name.style.border = '2px solid #3b81f6'
-}else{
-    label_one.style.transform = 'translateY(0) scale(1)'
-    label_one.style.color = '#2C3E50'
-    input_name.style.border = 'none'
-}
-if( email.value != ""){
-    label_2wo.style.transform = 'translateY(-24px) scale(0.75)'
-    label_2wo.style.color = '#3b81f6'
-    email.style.border = '2px solid #3b81f6'
-}else{
-    label_2wo.style.transform = 'translateY(0) scale(1)'
-    label_2wo.style.color = '#2C3E50'
-    email.style.border = 'none'
-}}
-foe = () =>{
-    label_2wo.style.transform = 'translateY(-24px) scale(0.75)'
-    label_2wo.style.color = '#3b81f6'
-    email.style.border = '2px solid #3b81f6'
-}
-foname = () =>{
-    label_one.style.transform = 'translateY(-24px) scale(0.75)'
-    label_one.style.color = '#3b81f6'
-    input_name.style.border = '2px solid #3b81f6'
+fun = () => {
+    if (input_name.value !== "" || document.activeElement === input_name) {
+        label_one.style.transform = 'translateY(-24px) scale(0.75)'
+        label_one.style.color = '#3b81f6'
+        input_name.style.border = '2px solid #3b81f6'
+    } else {
+        label_one.style.transform = 'translateY(0) scale(1)'
+        label_one.style.color = '#2C3E50'
+        input_name.style.border = ''
+    }
+    if (email.value !== "" || document.activeElement === email) {
+        label_2wo.style.transform = 'translateY(-24px) scale(0.75)'
+        label_2wo.style.color = '#3b81f6'
+        email.style.border = '2px solid #3b81f6'
+    } else {
+        label_2wo.style.transform = 'translateY(0) scale(1)'
+        label_2wo.style.color = '#2C3E50'
+        email.style.border = ''
+    }
 }
 
 
